@@ -11,10 +11,145 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+            <style>
+            
+                
+                 @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css); 
+                /* Google 思源宋體 */
+                /* font-family: 'cwTeXFangSong', serif;*/
+                
+                
+
+            .thumbnail{
+                background: #000;
+                font-family: 'cwTeXFangSong', serif;
+            }
+            
+            .thumbnail img{
+                width: 100%
+            }
+            
+            .thumbnail .caption h2{
+                font-style: italic;
+                font-weight: 900;
+                font-size: 30px; 
+                color: indianred
+            }
+
+            .thumbnail .caption p{
+                font-size: 18px;
+                color: forestgreen
+                text-align:justify
+            }
+
+            .carousel{
+                margin-bottom: 50px;
+            }
+            </style>
+
     </head>
     <body>
         
         
+        <div id="carousel-id" class="carousel slide" data-ride="carousel">
+            <!-- 幻燈片小圓點區 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+            </ol>
+            <!-- 幻燈片主圖區 -->
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="https://picsum.photos/2800/700/?random=1">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>CSS可樂好喝超爽快</h1>
+                            <p>你喝過了嗎？</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://picsum.photos/2800/700/?random=2">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>CSS可樂的外掛真方便</h1>
+                            <p>你安裝了嗎？</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">更多</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img src="https://picsum.photos/2800/700/?random=3">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>我是標題喔～自己改文案吧</h1>
+                            <p>我是內文喔，你可以把字打在這裡呦</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">詳細內容</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 上下頁控制區 -->
+            <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+        
+        
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">選單切換</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">CSS可樂</a>
+                </div>
+                
+                <!-- 手機隱藏選單區 -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <!-- 左選單 -->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">關於CSS可樂</a></li>
+                        <li><a href="#">CSS教學</a></li>
+                        <li><a href="#">CSS範例</a></li>
+                        <li><a href="#">原創CSS</a></li>
+                    </ul>
+                
+                    <!-- 搜尋表單 -->
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="請輸入關鍵字">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜尋</button>
+                    </form>
+                
+                    <!-- 右選單 -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Amos 您好</a></li>
+                        <li><a href="#">登出</a></li>
+                        <li><a href="#">個人設定</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">繁體中文 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">繁體中文</a></li>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">日本語</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 手機隱藏選單區結束 -->
+            </div>
+        </nav>
+        
+
+
+
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-3">
@@ -22,8 +157,8 @@
                     <div class="thumbnail">
                         <img src="https://picsum.photos/200/200/?random=1">
                         <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
+                            <h2>資二2 葉雅芳 29</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ducimus, libero voluptates commodi sint, molestiae pariatur adipisci architecto facere aperiam maiores accusantium, rem eius? Necessitatibus vero libero consectetur. Ullam, temporibus?</p>
                             <p>
                                 <a href="#" class="btn btn-info">加入購物車</a>
                                 <a href="#" class="btn btn-default">下次再買</a>
@@ -37,8 +172,8 @@
                     <div class="thumbnail">
                         <img src="https://picsum.photos/200/200/?random=2">
                         <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
+                            <h2>標題</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, illo. Rem voluptate, non aperiam iusto officia ipsum assumenda sit veniam. Iste quam cum facere! Possimus, perspiciatis! Rem magni perspiciatis voluptates.</p>
                             <p>
                                 <a href="#" class="btn btn-info">加入購物車</a>
                                 <a href="#" class="btn btn-default">下次再買</a>
@@ -52,8 +187,8 @@
                     <div class="thumbnail">
                         <img src="https://picsum.photos/200/200/?random=3">
                         <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
+                            <h2>標題</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, illo. Rem voluptate, non aperiam iusto officia ipsum assumenda sit veniam. Iste quam cum facere! Possimus, perspiciatis! Rem magni perspiciatis voluptates.</p>
                             <p>
                                 <a href="#" class="btn btn-info">加入購物車</a>
                                 <a href="#" class="btn btn-default">下次再買</a>
@@ -67,8 +202,8 @@
                     <div class="thumbnail">
                         <img src="https://picsum.photos/200/200/?random=4">
                         <div class="caption">
-                            <h2>標準版</h2>
-                            <p>內文</p>
+                            <h2>標題</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, illo. Rem voluptate, non aperiam iusto officia ipsum assumenda sit veniam. Iste quam cum facere! Possimus, perspiciatis! Rem magni perspiciatis voluptates.</p>
                             <p>
                                 <a href="#" class="btn btn-info">加入購物車</a>
                                 <a href="#" class="btn btn-default">下次再買</a>
